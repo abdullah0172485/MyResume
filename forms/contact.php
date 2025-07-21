@@ -29,5 +29,6 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
+  $contact->add_attachment('resume', 20, array('pdf', 'doc', 'docx', 'rtf'));
   echo $contact->send();
 ?>
